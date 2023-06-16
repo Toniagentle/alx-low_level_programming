@@ -1,7 +1,7 @@
-#include <studio.h>
+#include <stdio.h>
 #include <unistd.h>
 /**
- * main - A c program that prints a line standad erro
+ * main - printing without printf and puts
  *
  * Return: always (1)
  *
