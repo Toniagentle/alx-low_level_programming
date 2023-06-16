@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - its prints out output using put
+ * main -its prints out output using put
  *
  * Return: always (0)
  *
