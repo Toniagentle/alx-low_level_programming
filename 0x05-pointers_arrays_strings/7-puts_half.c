@@ -1,22 +1,39 @@
 #include "main.h"
+/**
+*puts_half - prints half of a string
+*@str: string
+*Return:void
+*/
+void puts_half(char *str)
+{
+int len = _strlen(str);
+
+if (len % 2 == 0)
+len = len / 2;
+
+else
+len = (len + 1) / 2;
+
+while (str[len] != '\0')
+{
+_putchar(str[len]);
+len++;
+}
+_putchar('\n');
+}
+
 
 /**
- * print_array - prints n elrments of an array of interfers
- * @a: Array of intergers
- * @n: Number of elements of the array to be printed
- * Return: a and n inputs
+ *_strlen - returns the length of a string
+ * @s: string
+ *Return: returns lenght;
  */
-void print_array(int *a, int n)
+int _strlen(char *s)
 {
-	int i;
-	
-	for (i = 0; i < (n - 1); i++)
-	{
-		printf("%d, ", a[i]);
-	}
-		if (i == (n-1))
-		{
-			printf("%d", a[i]);
-		}
-		printf("\n");
+int count, inc;
+inc = 0;
+for (count = 0; s[count] != '\0'; count++)
+inc++;
+
+return (inc);
 }
