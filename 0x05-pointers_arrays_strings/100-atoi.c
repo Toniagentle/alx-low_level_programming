@@ -1,37 +1,22 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+#include "main.h"
 
 /**
- * main - progress that generate random valid passwords
- * for the progress 101-crackme
- * Return: Always 0 (success)
- */
-int main(void)
+* _atoi - changes a string to an int
+* @s: the string to be changed
+*
+* Return: the converted int
+*/
+int _atoi(char *s)
 {
-	int pass[100];
-	int i, sum, n;
-
-	sum = 0;
-
-	srand(time(NULL));
-
-	for(i = 0; i < 100; i++)
-	{
-		pass[i] = rand() % 78;
-		sum += (pass[i] + '0');
-		putchar(pass[i] + '0');
-
-	if ((2772 - sum) - '0' < 78)
-		{
-			n = 2772 - sum - '0';
-			sum += n;
-			putchar(n + '0');
-			break;
-		}
-	}
-
-	return (0);
+int i = 1;
+unsigned int num = 0;
+do {
+if (*s == '-')
+i *= -1;
+else if (*s >= '0' && *s <= '9')
+num = num * 10 + (*s - '0');
+else if (num > 0)
+break;
+} while (*s++);
+return (num *i);
 }
-
- 
