@@ -1,4 +1,4 @@
-'include "main.h"
+#include "main.h"
 
 /**
  * add - adds two integer and return the result
@@ -12,5 +12,5 @@ int add(int a, int b)
 	
 	c = a + b;
 	
-	return (c;)
+	return (c);
 }
