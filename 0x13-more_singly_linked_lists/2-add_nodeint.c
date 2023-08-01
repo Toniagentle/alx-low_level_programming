@@ -2,8 +2,8 @@
 
 /**
  * add_nodeint - adds a new node at the beginning of a linked list
- * @head: a pointer to the first node in the list
- * @n: data to insert in the new node
+ * @head: pointer to the first node in the list
+ * @n: data to insert
  *
  * Return: pointer to the new node, or NULL if it fails
  */
